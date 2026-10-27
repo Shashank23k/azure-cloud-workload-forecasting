@@ -1,0 +1,38 @@
+# Local data: download the exact Atomity data-v1 release instead of committing it
+challenge_data/*
+!challenge_data/README.md
+
+# Python / notebook tooling
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Build, machine-local and modeling artifacts
+build/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+*.joblib
+*.pkl
+
+# Original downloaded challenge archives (never push to GitHub)
+/data-v1.tar.gz
+/forecasting-challenge-main.zip
+
+# Reproducible local test scratch space and machine credentials
+.test_tmp*/
+.test_cache*/
+.pytest_work/
+.pytest_local_cache/
+.aws/
+*.pem
+*.key
+.mpl_cache*/
+.audit_work/

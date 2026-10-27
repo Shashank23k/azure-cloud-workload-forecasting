@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud-workload-forecasting"
+version = "1.0.0"
+description = "Leakage-safe Azure workload forecasting with rolling-origin validation"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "pandas>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+analysis = ["matplotlib>=3.8", "nbformat>=5.10", "ipykernel>=6.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

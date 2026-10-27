@@ -1,0 +1,39 @@
+{
+  "selected": {
+    "active_vm_count": "persistence",
+    "aggregate_cpu_utilization": "persistence"
+  },
+  "origins": [
+    50,
+    62,
+    74,
+    86
+  ],
+  "horizon": 24,
+  "training_steps": 110,
+  "selection_rule": ">5% MAE improvement over persistence; simplest within 1% of best",
+  "uncertainty": {
+    "active_vm_count": {
+      "model": "persistence",
+      "absolute_error_p90": 0.0,
+      "signed_error_p10": 0.0,
+      "signed_error_p90": 0.0,
+      "pooled_forecast_errors": 96,
+      "unique_validation_timestamps": 60,
+      "prequential_coverage": 1.0,
+      "prequential_n": 72,
+      "warning": "Exploratory only: overlapping folds, model selection and few origins preclude calibrated coverage"
+    },
+    "aggregate_cpu_utilization": {
+      "model": "persistence",
+      "absolute_error_p90": 0.42764383130715444,
+      "signed_error_p10": -0.295915317374285,
+      "signed_error_p90": 0.3722070953599905,
+      "pooled_forecast_errors": 96,
+      "unique_validation_timestamps": 60,
+      "prequential_coverage": 0.9444444444444444,
+      "prequential_n": 72,
+      "warning": "Exploratory only: overlapping folds, model selection and few origins preclude calibrated coverage"
+    }
+  }
+}

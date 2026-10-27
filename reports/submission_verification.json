@@ -1,0 +1,20 @@
+{
+  "rows": 24,
+  "columns": [
+    "timestamp",
+    "active_vm_count",
+    "aggregate_cpu_utilization"
+  ],
+  "timestamp_first": 33000,
+  "timestamp_last": 39900,
+  "exact_timestamp_match": true,
+  "finite": true,
+  "valid_bounds": true,
+  "byte_identical_regeneration": true,
+  "predictions_sha256": "8f2ddac2fa1d84b2b090b848ce2a12ca1f1133e5c028d131ede9e4a78fbd0054",
+  "selected": {
+    "active_vm_count": "persistence",
+    "aggregate_cpu_utilization": "persistence"
+  },
+  "holdout_labels_scored": false
+}

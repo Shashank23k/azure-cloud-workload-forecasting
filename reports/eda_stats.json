@@ -1,0 +1,99 @@
+{
+  "total_rows": 1340000,
+  "unique_vms": 10000,
+  "metadata_rows": 10000,
+  "all_timestamp_count": 134,
+  "training_timestamp_count": 110,
+  "training_row_count": 1100000,
+  "forecast_timestamp_count": 24,
+  "cadence_seconds": 300,
+  "training_missing_measurements": 0,
+  "training_excluded_null_avg_cpu": 0,
+  "training_duplicate_vm_timestamp_pairs": 0,
+  "training_target_statistics": {
+    "active_vm_min": 10000,
+    "active_vm_max": 10000,
+    "active_vm_unique_values": 1,
+    "aggregate_cpu_mean": 9.414089019539007,
+    "aggregate_cpu_std": 0.19356833547362823,
+    "aggregate_cpu_min": 9.111633601754887,
+    "aggregate_cpu_max": 9.912175173984915,
+    "aggregate_cpu_p95": 9.829146464857047,
+    "aggregate_cpu_peak_timestamp": 16500,
+    "aggregate_cpu_low_timestamp": 32400,
+    "aggregate_cpu_lag1_autocorrelation": 0.6672358236125617
+  },
+  "training_vm_level_statistics": {
+    "avg_cpu_median": 5.119809152561594,
+    "avg_cpu_p90": 19.691118594608653,
+    "avg_cpu_p95": 37.293248468366095,
+    "avg_cpu_p99": 87.40634736453234,
+    "fraction_below_5pct_avg_cpu": 0.48929,
+    "fraction_at_least_80pct_avg_cpu": 0.012720909090909092,
+    "fraction_at_least_80pct_max_cpu": 0.02951727272727273,
+    "mean_high_avg_share_by_timestamp": 0.012720909090909087,
+    "max_high_avg_share_by_timestamp": 0.0146,
+    "vm_mean_cpu_p95": 33.625714676811214,
+    "min_observations_per_training_vm": 110,
+    "max_observations_per_training_vm": 110
+  },
+  "categories": {
+    "Delay-insensitive": {
+      "vms": 6180,
+      "vm_share": 0.618,
+      "mean_cpu": 8.257265890248375,
+      "median_cpu": 5.160160328668269,
+      "p90_cpu": 15.443986251197979,
+      "share_vm_readings_avg_cpu_ge_80": 0.008923212709620477
+    },
+    "Interactive": {
+      "vms": 3091,
+      "vm_share": 0.3091,
+      "mean_cpu": 11.505149960490012,
+      "median_cpu": 5.295715440436769,
+      "p90_cpu": 28.535515558132644,
+      "share_vm_readings_avg_cpu_ge_80": 0.01912002588159172
+    },
+    "Unknown": {
+      "vms": 729,
+      "vm_share": 0.0729,
+      "mean_cpu": 10.35468925347121,
+      "median_cpu": 3.4155750798877254,
+      "p90_cpu": 31.25838389422964,
+      "share_vm_readings_avg_cpu_ge_80": 0.017782765930914077
+    }
+  },
+  "memory_buckets": {
+    "2": {
+      "vms": 3904,
+      "mean_cpu": 8.80225392134463
+    },
+    "32": {
+      "vms": 1383,
+      "mean_cpu": 7.814017174669405
+    },
+    "4": {
+      "vms": 2475,
+      "mean_cpu": 11.459541216235001
+    },
+    "64": {
+      "vms": 82,
+      "mean_cpu": 11.217160055534702
+    },
+    "8": {
+      "vms": 2146,
+      "mean_cpu": 9.143401122245214
+    },
+    ">64": {
+      "vms": 10,
+      "mean_cpu": 6.619469081917167
+    }
+  },
+  "observed_activity": {
+    "entries_after_first_timestamp": 0,
+    "exits_before_last_timestamp": 0,
+    "note": "Telemetry appearances/disappearances, not lifecycle creation/deletion"
+  },
+  "time_handling": "Relative seconds from source trace; not UTC or local datetimes",
+  "leakage_policy": "Descriptive CPU analysis uses only first training timestamps; future timestamp coordinates are used only to construct the forecast template; metadata whole-trace statistics/deletion times are excluded"
+}
